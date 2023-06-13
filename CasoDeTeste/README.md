@@ -1,1 +1,11 @@
-### Caso
+01  | Caso de Teste - Cadastro de Usuário com CPF inválido
+--------- | ------
+Pré-condição | O sistema de cadastro de usuário está acessível e funcional. O usuário tem permissões adequadas para acessar e utilizar a funcionalidade de cadastro. O usuário não está cadastrado no sistema.
+Pós-condição | O sistema deve rejeitar o cadastro do usuário com CPF inválido. Uma mensagem de erro adequada deve ser exibida. O usuário não deve ser adicionado ao banco de dados do sistema.
+Detalhamento | O CPF inválido será inserido no campo de CPF durante o processo de cadastro. O teste deve validar se o sistema rejeita o cadastro e exibe uma mensagem de erro adequada. O teste deve ser executado uma vez para cada formato de CPF inválido.
+Massa de Entrada | CPF inválido.
+Massa de Saída| O sistema deve exibir uma mensagem de erro informando que o CPF é inválido. O sistema não deve permitir o cadastro do usuário com o CPF inválido. O usuário não deve ser adicionado ao banco de dados do sistema.
+Critérios Especiais | O caso de teste deve ser repetido para diferentes formatos inválidos de CPF, como CPFs com dígitos repetidos, CPFs com dígitos em sequência, CPFs com dígitos aleatórios, entre outros. O sistema deve rejeitar corretamente todos os CPFs inválidos. Testar também o comportamento do sistema ao tentar cadastrar um usuário sem preencher o campo de CPF.
+Ambiente | Sistema operacional cliente Windows 10. Google Chrome. Servidor de aplicação WAMPSERVER e SO Windows 10
+Implementação | Acesse a funcionalidade de cadastro de usuário no sistema. Preencha o campo de nome com um nome válido. Insira o CPF inválido no campo de CPF. Submeta o formulário de cadastro. Verifique se o sistema exibe uma mensagem de erro adequada relacionada ao CPF inválido. Verifique se o sistema não permite a finalização do cadastro. Verifique se o usuário não foi adicionado ao banco de dados do sistema.
+Iteração | Repita o teste com diferentes formatos inválidos de CPF, como CPFs com dígitos repetidos, CPFs com dígitos em sequência, CPFs com dígitos aleatórios, entre outros. Certifique-se de que o sistema rejeite corretamente todos os CPFs inválidos. Realize testes adicionais para garantir que o sistema aceite corretamente CPFs válidos.
